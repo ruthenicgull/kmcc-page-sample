@@ -14,7 +14,9 @@ function Carousel() {
           </p>
           <div className={styles.button_group}>
             <button className={styles.button}>Contact</button>
-            <button className={`${styles.button_outline}`}>Learn More</button>
+            <button className={`${styles.button} ${styles.button_outline}`}>
+              Learn More
+            </button>
           </div>
         </div>
       </div>

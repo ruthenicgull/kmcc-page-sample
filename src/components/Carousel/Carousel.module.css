@@ -31,7 +31,7 @@
 .content {
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 5vw;
 }
 
 .image {
@@ -56,24 +56,14 @@
   font-size: 0.8rem;
   font-weight: 500;
   color: white;
-  padding: 0.5rem 0;
-  width: 10rem;
+  padding: 0.5rem 2rem;
   border-radius: 3rem;
   background-color: var(--button-accent-1);
   cursor: pointer;
 }
 
-.button_outline {
-  all: unset;
-  text-align: center;
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: white;
-  padding: 0.5rem 0;
-  width: 10rem;
-  border-radius: 3rem;
-  cursor: pointer;
-  background-color: none;
+.button_group .button_outline {
+  background-color: transparent;
   border: 1.5px solid var(--button-accent-2);
 }
 
@@ -120,5 +110,9 @@
   .car_left,
   .car_right {
     width: 0.75rem;
+  }
+
+  .button {
+    width: 8rem;
   }
 }

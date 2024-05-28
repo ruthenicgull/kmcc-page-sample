@@ -30,13 +30,13 @@ function App() {
   return (
     <>
       <Landing sm={sm} />
-      <WhyUs sm={sm} />
+      {/* <WhyUs sm={sm} />
       <OurServices sm={sm} />
       <Facilities sm={sm} />
       <Demo sm={sm} />
       <Gallery sm={sm} />
       <Contact sm={sm} />
-      <Footer sm={sm} />
+      <Footer sm={sm} /> */}
     </>
   );
 }
