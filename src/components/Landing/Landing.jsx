@@ -6,7 +6,7 @@ function Landing({ sm }) {
   return (
     <header className={styles.container}>
       <Navbar sm={sm} />
-      <Carousel sm={sm} />
+      <Carousel />
     </header>
   );
 }
