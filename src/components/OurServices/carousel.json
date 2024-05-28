@@ -1,0 +1,17 @@
+[
+  { "image_url": "/services-images/decor.png", "text": "Decor" },
+  {
+    "image_url": "/services-images/entertainment.png",
+    "text": "Entertainment"
+  },
+  { "image_url": "/services-images/hospitality.png", "text": "Hospitality" },
+  { "image_url": "/services-images/wedding.png", "text": "Wedding" },
+  { "image_url": "/services-images/catering.png", "text": "Catering" },
+  { "image_url": "/services-images/decor.png", "text": "Decor" },
+  {
+    "image_url": "/services-images/entertainment.png",
+    "text": "Entertainment"
+  },
+  { "image_url": "/services-images/hospitality.png", "text": "Hospitality" },
+  { "image_url": "/services-images/wedding.png", "text": "Wedding" }
+]

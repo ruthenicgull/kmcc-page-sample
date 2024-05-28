@@ -1,0 +1,42 @@
+.container {
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  max-width: 1000px;
+}
+
+.logo {
+  height: 4rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu_button {
+  border: 1.5px solid white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu_button:hover {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0 2rem;
+  }
+  .menu {
+    display: none;
+  }
+}

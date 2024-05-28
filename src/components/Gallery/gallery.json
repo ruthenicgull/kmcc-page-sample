@@ -1,0 +1,22 @@
+[
+  {
+    "image_url": "/gallery-images/Image-1.png",
+    "title": "Project Conference",
+    "description": "Lorem ipsum dolor sit amet, consectetur dipiscing elit eiusmod "
+  },
+  {
+    "image_url": "/gallery-images/Image-2.png",
+    "title": "Reception",
+    "description": "Lorem ipsum dolor sit amet, consectetur dipiscing elit eiusmod "
+  },
+  {
+    "image_url": "/gallery-images/Image-3.png",
+    "title": "Project Title",
+    "description": "Lorem ipsum dolor sit amet, consectetur dipiscing elit eiusmod "
+  },
+  {
+    "image_url": "/gallery-images/Image-4.png",
+    "title": "Project Title",
+    "description": "Lorem ipsum dolor sit amet, consectetur dipiscing elit eiusmod "
+  }
+]

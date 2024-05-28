@@ -1,0 +1,34 @@
+.container {
+  margin: var(--primary-block-margin-y) auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1000px;
+}
+
+.heading {
+  font-size: 2rem;
+}
+
+.photo_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  place-items: center;
+}
+
+.image {
+  max-width: 30rem;
+}
+
+.image_title {
+  font-weight: 400;
+}
+
+.image_description {
+  font-size: 0.9rem;
+}
+
+.button {
+  margin: auto;
+}

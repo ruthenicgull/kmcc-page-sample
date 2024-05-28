@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  align-items: center;
+  background-color: var(--alt-bg-color);
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+.left_content {
+  padding: 0 2rem;
+  width: fit-content;
+  margin: auto;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content_heading {
+  font-size: 2.5rem;
+}
+
+.right {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+
+.play_button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}

@@ -1,0 +1,7 @@
+.container {
+  background-image: url("/carousel-bg.png");
+  padding-bottom: 4rem;
+  background-size: cover;
+  background-color: var(--carousel-bg-overlay-color);
+  background-blend-mode: multiply;
+}

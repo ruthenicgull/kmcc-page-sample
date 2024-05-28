@@ -1,0 +1,88 @@
+.container {
+  background-color: var(--alt-bg-color);
+  border: 1px solid transparent;
+}
+
+.content {
+  margin: var(--primary-block-margin-y) var(--primary-block-margin-x);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.big_heading {
+  flex: 1;
+  font-size: 2rem;
+}
+
+.header_side {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.small_heading {
+  color: var(--section-title-color);
+}
+
+.header_side_text {
+  font-size: 0.9rem;
+  max-width: 20rem;
+}
+
+.carousel {
+  width: calc(100vw - 1.5rem);
+  display: flex;
+  gap: 2rem;
+  overflow-x: scroll;
+  padding: 1rem;
+}
+
+.carousel_item {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.item_image {
+  width: 15rem;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+
+.item_text {
+  color: #d9d9d9;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: 600;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.button {
+  outline: none;
+  border: 1.5px solid var(--button-accent-2);
+  font-size: 1.01rem;
+  padding: 0.75rem 7rem;
+  font-weight: 500;
+  border-radius: 3rem;
+  background-color: transparent;
+  cursor: pointer;
+}
