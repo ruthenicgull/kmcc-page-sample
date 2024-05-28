@@ -1,6 +1,6 @@
 .container {
-  margin: 0 auto;
-  padding: 1rem 0;
+  margin-inline: auto;
+  padding: 1rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,6 +17,9 @@
   display: flex;
   gap: 2rem;
   align-items: center;
+}
+
+.menu_item {
   cursor: pointer;
 }
 
@@ -25,6 +28,7 @@
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .menu_button:hover {
@@ -32,11 +36,53 @@
   color: black;
 }
 
+.close_menu_btn {
+  all: unset;
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.open_menu_btn {
+  all: unset;
+  display: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   .container {
-    margin: 0 2rem;
+    margin-inline: 1rem;
   }
+
   .menu {
-    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 1rem;
+    right: 1rem;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    gap: 1rem;
+  }
+
+  .close_menu_btn {
+    display: block;
+  }
+
+  .open_menu_btn {
+    display: block;
+  }
+
+  .menu_button {
+    border: 1.5px solid black;
+  }
+
+  .menu_button:hover {
+    background-color: black;
+    color: white;
   }
 }
