@@ -1,5 +1,6 @@
 // import styles from "./App.module.css";
 
+import { useEffect, useState } from "react";
 import Contact from "./components/Contact/Contact";
 import Demo from "./components/Demo/Demo";
 import Facilities from "./components/Facilities/Facilities";
@@ -10,16 +11,32 @@ import OurServices from "./components/OurServices/OurServices";
 import WhyUs from "./components/WhyUs/WhyUs";
 
 function App() {
+  const [sm, setSm] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setSm(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
-      <Landing />
-      <WhyUs />
-      <OurServices />
-      <Facilities />
-      <Demo />
-      <Gallery />
-      <Contact />
-      <Footer />
+      <Landing sm={sm} />
+      <WhyUs sm={sm} />
+      <OurServices sm={sm} />
+      <Facilities sm={sm} />
+      <Demo sm={sm} />
+      <Gallery sm={sm} />
+      <Contact sm={sm} />
+      <Footer sm={sm} />
     </>
   );
 }

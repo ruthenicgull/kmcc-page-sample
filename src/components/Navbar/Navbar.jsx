@@ -1,25 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "./Navbar.module.css";
 import { IoMdClose } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-function Navbar() {
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
+function Navbar({ sm }) {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 768);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    handleResize();
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   const openMenu = () => {
     setMenuOpen(true);
@@ -32,7 +17,7 @@ function Navbar() {
     <nav className={styles.container}>
       <img src="/logo.png" alt="logo" className={styles.logo} />
 
-      {isSmallScreen ? (
+      {sm ? (
         <>
           <ul
             className={styles.menu}
