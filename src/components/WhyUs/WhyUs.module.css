@@ -2,7 +2,6 @@
   display: flex;
   margin: var(--primary-block-margin-y) auto;
   justify-content: space-between;
-  gap: 2rem;
   align-items: flex-start;
   max-width: 1000px;
 }
@@ -12,6 +11,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding-inline: 1rem;
 }
 
 .small_header {
@@ -25,6 +25,7 @@
 
 .events_collage {
   max-width: 25rem;
+  padding-inline: 1rem;
 }
 
 .button {
@@ -40,4 +41,22 @@
   font-weight: 700;
   cursor: pointer;
   box-shadow: 0 0 3rem rgba(61, 55, 241, 0.25);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .info {
+    max-width: inherit;
+  }
+
+  .button {
+    margin: 1rem auto;
+  }
+
+  .events_collage {
+    margin: 1rem auto;
+  }
 }
