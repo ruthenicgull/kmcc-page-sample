@@ -8,14 +8,11 @@
   width: 50%;
 }
 
-.right {
-  width: 50%;
-}
-
 .left_content {
-  padding: 0 2rem;
+  padding-inline: 2rem;
   width: fit-content;
-  margin: auto;
+  margin-block: var(--primary-block-margin-y);
+  margin-inline: auto;
   max-width: 30rem;
   display: flex;
   flex-direction: column;
@@ -27,20 +24,38 @@
 }
 
 .right {
+  width: 50%;
   position: relative;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .thumbnail {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
   mix-blend-mode: multiply;
 }
 
 .play_button {
   position: absolute;
+  width: 90%;
+  max-width: 10rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .left_content {
+    text-align: center;
+    padding-inline: 1rem;
+  }
 }
