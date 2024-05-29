@@ -36,7 +36,7 @@ function App() {
       <Demo sm={sm} />
       <Gallery sm={sm} />
       <Contact sm={sm} />
-      {/* <Footer sm={sm} /> */}
+      <Footer sm={sm} />
     </>
   );
 }

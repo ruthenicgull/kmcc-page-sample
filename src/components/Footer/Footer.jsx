@@ -32,7 +32,7 @@ function Footer() {
             <li>Help Center</li>
           </ul>
         </div>
-        <div className={styles.option_list}>
+        <div className={`${styles.option_list} ${styles.mailing_list}`}>
           <strong>Stay in the loop</strong>
           <div>
             <p>
@@ -47,6 +47,9 @@ function Footer() {
             </form>
           </div>
         </div>
+      </div>
+      <div className={styles.subfooter}>
+        <img src="/powered_by.png" alt="#" />
       </div>
     </footer>
   );

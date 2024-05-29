@@ -6,11 +6,16 @@
 .content {
   color: white;
   font-size: 0.83rem;
-  margin: var(--primary-block-margin-y) var(--primary-block-margin-x);
+  margin-top: var(--primary-block-margin-y);
+  margin-inline: auto;
+  margin-bottom: 0;
+  max-width: 1000px;
   display: grid;
   grid-template-columns: 3fr 1fr 1fr 3fr;
   justify-items: center;
   gap: 2rem;
+  padding: 1rem;
+  border-bottom: 1px solid #4c4d8b;
 }
 
 .details {
@@ -54,4 +59,51 @@
   height: 2rem;
   border-radius: 2rem;
   box-shadow: 0 0 3rem rgba(61, 55, 241, 0.25);
+}
+
+.subfooter {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.subfooter > img {
+  display: block;
+  margin-left: auto;
+  padding-block: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .mailing_list {
+    grid-column: span 3;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .details {
+    grid-column: span 2;
+  }
+
+  .mailing_list {
+    grid-column: span 2;
+  }
+
+  .mailing_list_form {
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1rem;
+  }
+
+  .mailing_list_form > button {
+    min-width: 100%;
+  }
 }
