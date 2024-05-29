@@ -34,8 +34,8 @@ function App() {
       <OurServices sm={sm} />
       <Facilities sm={sm} />
       <Demo sm={sm} />
-      {/* <Gallery sm={sm} />
-      <Contact sm={sm} />
+      <Gallery sm={sm} />
+      {/* <Contact sm={sm} />
       <Footer sm={sm} /> */}
     </>
   );

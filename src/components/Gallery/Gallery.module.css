@@ -4,6 +4,7 @@
   flex-direction: column;
   gap: 2rem;
   max-width: 1000px;
+  padding-inline: 1rem;
 }
 
 .heading {
@@ -18,6 +19,7 @@
 }
 
 .image {
+  width: 100%;
   max-width: 30rem;
 }
 
@@ -31,4 +33,10 @@
 
 .button {
   margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .photo_grid {
+    grid-template-columns: 1fr;
+  }
 }
