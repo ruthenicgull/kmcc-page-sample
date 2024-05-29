@@ -35,8 +35,8 @@ function App() {
       <Facilities sm={sm} />
       <Demo sm={sm} />
       <Gallery sm={sm} />
-      {/* <Contact sm={sm} />
-      <Footer sm={sm} /> */}
+      <Contact sm={sm} />
+      {/* <Footer sm={sm} /> */}
     </>
   );
 }
