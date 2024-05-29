@@ -64,9 +64,17 @@
   cursor: pointer;
 }
 
-.button_group .button_outline {
+.button:hover {
+  background-color: var(--hover-button-accent-1);
+}
+
+.button_group > .button_outline {
   background-color: transparent;
   border: 1.5px solid var(--button-accent-2);
+}
+
+.button_group > .button_outline:hover {
+  background-color: var(--button-accent-2);
 }
 
 @media screen and (max-width: 768px) {

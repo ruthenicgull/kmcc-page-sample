@@ -61,6 +61,11 @@
 
 .social_media > img {
   width: 2rem;
+  cursor: pointer;
+}
+
+.social_media > img:hover {
+  transform: scale(1.08);
 }
 
 @media screen and (max-width: 768px) {

@@ -4,6 +4,7 @@
   --primary-block-margin-x: 6rem;
   --primary-block-margin-y: 4rem;
   --button-accent-1: #dabb78;
+  --hover-button-accent-1: #dbc69a;
   --button-accent-2: #aa852d;
   --carousel-controls-color: #f6821f;
   --carousel-bg-overlay-color: rgba(2, 5, 52, 0.9);
@@ -18,23 +19,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-#root {
-  max-width: 100vw;
-}
-
-.outline-button {
-  outline: none;
-  border: 1.5px solid var(--button-accent-2);
-  font-size: 1.01rem;
-  padding: 0.75rem 1rem;
-  font-weight: 500;
-  width: 100%;
-  max-width: 15rem;
-  border-radius: 3rem;
-  background-color: transparent;
-  cursor: pointer;
+  transition: all 200ms ease-in-out;
 }
 
 .filled-button {
@@ -49,4 +34,25 @@
   border-radius: 3rem;
   background-color: var(--button-accent-1);
   cursor: pointer;
+}
+
+.filled-button:hover {
+  background-color: var(--hover-button-accent-1);
+}
+.outline-button {
+  outline: none;
+  border: 1.5px solid var(--button-accent-2);
+  font-size: 1.01rem;
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  width: 100%;
+  max-width: 15rem;
+  border-radius: 3rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.outline-button:hover {
+  background-color: var(--button-accent-2);
+  color: white;
 }

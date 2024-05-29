@@ -65,17 +65,7 @@
 }
 
 .button {
-  width: 100%;
-  max-width: 15rem;
   margin-inline: auto;
-  outline: none;
-  border: 1.5px solid var(--button-accent-2);
-  font-size: 1.01rem;
-  padding: 0.75rem 1rem;
-  font-weight: 500;
-  border-radius: 3rem;
-  background-color: transparent;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

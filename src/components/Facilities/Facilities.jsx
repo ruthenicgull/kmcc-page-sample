@@ -62,7 +62,7 @@ function Facilities() {
             </li>
           </ul>
         </div>
-        <button className={styles.button}>View All</button>
+        <button className={`${styles.button} outline-button`}>View All</button>
       </div>
     </section>
   );

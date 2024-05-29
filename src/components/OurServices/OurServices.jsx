@@ -29,7 +29,7 @@ function OurServices() {
             </div>
           ))}
         </div>
-        <button className={styles.button}>View All</button>
+        <button className="outline-button">View All</button>
       </div>
     </section>
   );
