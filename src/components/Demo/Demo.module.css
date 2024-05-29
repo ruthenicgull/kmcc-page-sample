@@ -30,7 +30,7 @@
 }
 
 .thumbnail {
-  max-width: 100%;
+  width: 100%;
   mix-blend-mode: multiply;
 }
 
@@ -44,7 +44,7 @@
   z-index: 10;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1170px) {
   .container {
     flex-direction: column;
   }
