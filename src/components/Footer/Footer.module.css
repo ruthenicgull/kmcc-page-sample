@@ -69,7 +69,7 @@
 .subfooter > img {
   display: block;
   margin-left: auto;
-  padding-block: 1rem;
+  padding: 1rem;
 }
 
 @media screen and (max-width: 768px) {
