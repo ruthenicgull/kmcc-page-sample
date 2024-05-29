@@ -52,11 +52,13 @@
 
 .button {
   all: unset;
+  width: 100%;
+  max-width: 10rem;
   text-align: center;
   font-size: 0.8rem;
   font-weight: 500;
   color: white;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   border-radius: 3rem;
   background-color: var(--button-accent-1);
   cursor: pointer;
@@ -95,6 +97,10 @@
   .button_group {
     margin-inline: auto;
   }
+
+  .button {
+    width: max-content;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -113,6 +119,7 @@
   }
 
   .button {
-    width: 8rem;
+    width: 100%;
+    max-width: 10rem;
   }
 }

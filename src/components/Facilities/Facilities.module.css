@@ -3,8 +3,9 @@
   margin: var(--primary-block-margin-y) auto;
   justify-content: space-between;
   gap: 2rem;
-  align-items: flex-start;
+  align-items: center;
   max-width: 1000px;
+  padding-inline: 1rem;
 }
 
 .info {
@@ -13,6 +14,7 @@
   flex-direction: column;
   gap: 1rem;
   align-items: flex-start;
+  margin-inline: auto;
 }
 
 .small_header {
@@ -58,15 +60,34 @@
 
 .events_collage {
   max-width: 35rem;
+  width: 50%;
+  margin-inline: auto;
 }
 
 .button {
+  width: 100%;
+  max-width: 15rem;
+  margin-inline: auto;
   outline: none;
   border: 1.5px solid var(--button-accent-2);
   font-size: 1.01rem;
-  padding: 0.75rem 7rem;
+  padding: 0.75rem 1rem;
   font-weight: 500;
   border-radius: 3rem;
   background-color: transparent;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .info {
+    max-width: none;
+  }
+
+  .events_collage {
+    width: 100%;
+  }
 }
