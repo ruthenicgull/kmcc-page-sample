@@ -1,0 +1,42 @@
+.container {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* height: 100vh;
+  width: 100vw; */
+  overflow: hidden;
+  z-index: 100;
+}
+
+.dialog {
+  position: relative;
+  border: none;
+  margin-inline: auto;
+  margin-block: 50vh;
+  transform: translateY(-50%);
+  max-width: 900px;
+  padding: 1rem;
+  z-index: 101;
+}
+
+.close_button {
+  all: unset;
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.close_button:hover {
+  background-color: rgb(200, 200, 200);
+}

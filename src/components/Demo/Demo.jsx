@@ -1,6 +1,21 @@
+import { useState } from "react";
+import Modal from "../Modal/Modal";
 import styles from "./Demo.module.css";
+import Contact from "../Contact/Contact";
 
 function Demo() {
+  const [showModal, setShowModal] = useState(false);
+
+  function closeModal() {
+    setShowModal(false);
+    console.log("close", showModal);
+  }
+
+  function openModal() {
+    setShowModal(true);
+    console.log("open", showModal);
+  }
+
   return (
     <section className={styles.container}>
       <div className={styles.left}>
@@ -24,8 +39,18 @@ function Demo() {
           className={styles.play_button}
           src="/demo-images/video-play-button.png"
           alt="play-button"
+          onClick={openModal}
         />
       </div>
+      {showModal && (
+        <Modal closeModal={closeModal}>
+          <video
+            src="/videos/stock_footage.mp4"
+            className={styles.video}
+            controls
+          />
+        </Modal>
+      )}
     </section>
   );
 }
