@@ -8,6 +8,7 @@
   padding-block: 2rem;
   color: white;
   max-width: 1200px;
+  min-height: 80vh;
 }
 
 .car_left,
@@ -34,6 +35,16 @@
   display: flex;
   align-items: center;
   gap: 5vw;
+  animation: fade-in 750ms ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .image {

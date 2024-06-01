@@ -17,14 +17,24 @@ function Carousel() {
   // }, [autoRollEffect]);
 
   function showNextSlide() {
-    if (itemIndex === slides.length - 1) setItemIndex(0);
-    else setItemIndex((prevIndex) => prevIndex + 1);
+    setItemIndex((prevIndex) =>
+      prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+    );
   }
 
   function showPrevSlide() {
-    if (itemIndex === 0) setItemIndex(slides.length - 1);
-    else setItemIndex((prevIndex) => prevIndex - 1);
+    setItemIndex((prevIndex) =>
+      prevIndex === 0 ? slides.length - 1 : prevIndex - 1
+    );
   }
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      showNextSlide();
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [itemIndex]);
 
   return (
     <div className={styles.container}>
@@ -33,7 +43,7 @@ function Carousel() {
         className={styles.car_left}
         onClick={showPrevSlide}
       />
-      <div className={styles.content}>
+      <div key={itemIndex} className={styles.content}>
         <img
           src={slides[itemIndex]?.imageUrl}
           alt="#"
