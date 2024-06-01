@@ -1,20 +1,9 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./Carousel.module.css";
 import slides from "./slides.json";
 
 function Carousel() {
   const [itemIndex, setItemIndex] = useState(0);
-
-  // const autoRollEffect = useCallback(() => {
-  //   if (itemIndex >= slides.length - 1) setItemIndex(0);
-  //   else setItemIndex((prevIndex) => prevIndex + 1);
-  // }, [itemIndex]);
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     autoRollEffect();
-  //   }, 3000);
-  // }, [autoRollEffect]);
 
   function showNextSlide() {
     setItemIndex((prevIndex) =>
@@ -31,7 +20,7 @@ function Carousel() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       showNextSlide();
-    }, 3000);
+    }, 4000);
 
     return () => clearInterval(intervalId);
   }, [itemIndex]);
